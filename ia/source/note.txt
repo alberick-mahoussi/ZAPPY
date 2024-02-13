@@ -1,0 +1,23 @@
+player{
+    id
+    case on,
+    team *,
+    level,
+    direction,
+    inventory,
+    fd,
+    msg(send & get),
+    dead or live,
+    command,
+    pos_x,
+    pos_y;
+    deconnect
+}
+
+struct net{
+    fd_server,
+    fd_graphics,
+    reads_fds,
+    writes_fds,
+    timeout,
+}
